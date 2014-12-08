@@ -1,12 +1,9 @@
 {
   "name": "twitter",
   "version": "0.0.0",
-  "description": "",
+  "description": "Sample application to query Twitter and cache results in Redis",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "Scott Ganyo",
   "license": "ISC",
   "dependencies": {
     "twit" : "",
