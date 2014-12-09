@@ -31,7 +31,7 @@ module.exports = function Twitter(config) {
   this.cachedQuery = function(query, callback) {
 
     var self = this;
-    var cacheKey = cacheKey(query);
+    var cacheKey = makeCacheKey(query);
 
     // retrieve results from cache
     self.cache.get(cacheKey, function(err, results) {
@@ -68,7 +68,7 @@ module.exports = function Twitter(config) {
   }
 
   // create a compound key for the Cache using the Query
-  function cacheKey(query) {
+  function makeCacheKey(query) {
     return 'twitter:cache:' + query;
   }
 };

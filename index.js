@@ -17,7 +17,7 @@ twitter.query(queryString, function(err, results) {
 
   // print out the results of the Twitter query (or cache result)
   results.statuses.forEach(function(status) {
-    console.log('%s : %s', status.user.screen_name, status.text);
+    console.log('%s: %s', status.user.screen_name, status.text);
   });
 
   // exit the script
